@@ -2,6 +2,7 @@ import os
 import peewee as pw
 import datetime
 from database import db
+from playhouse.postgres_ext import PostgresqlExtDatabase
 
 
 class BaseModel(pw.Model):
@@ -26,3 +27,4 @@ class BaseModel(pw.Model):
     class Meta:
         database = db
         legacy_table_names = False
+
