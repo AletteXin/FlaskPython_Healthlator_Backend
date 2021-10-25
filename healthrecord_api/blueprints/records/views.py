@@ -35,12 +35,12 @@ def create():
 
     create = Form.create(Name = new_entry['Name'], Gender = new_entry['Gender'], Birthdate = new_entry['Birthdate'], 
     Address = new_entry['Address'], Medications = new_entry['Medications'], Nameofnextkin = new_entry['Nameofnextkin'],
-    Phoneofnextkin = new_entry['Phoneofnextkin'], Reasonforvisit = new_entry['Reasonforvisit'], Fever = False, 
-    Headache = True, Nightchills = False, Sorethroat = False, Cough = False, Breathingdiff = False, 
-    Diarrhoea = True, Chestpain = False, Legnumbness = False, Handnumbness = False, Facenumbness = False, 
-    Diabetes = False, Highbloodpressure = True, Highcholesterol = False, Asthma = False, Kidneydisease = False,
-    Arthritis = False, Pancreaticcancer = False, Livercancer = False, Colorectalcancer = False, 
-    COPD = True, Depression = False, Lungcancer = False)
+    Phoneofnextkin = new_entry['Phoneofnextkin'], Reasonforvisit = new_entry['Reasonforvisit'], Fever = ['Fever'], 
+    Headache = ['Headache'], Nightchills = ['Nightchills'], Sorethroat = ['Sorethroat'], Cough = ['Cough'], Breathingdiff = ['Breathingdiff'], 
+    Diarrhoea = ['Diarrhoea'], Chestpain = ['Chestpain'], Legnumbness = ['Legnumbness'], Handnumbness = ['Handnumbness'], Facenumbness = ['Facenumbness'], 
+    Diabetes = ['Diabetes'], Highbloodpressure = ['Highbloodpressure'], Highcholesterol = ['Highcholesterol'], Asthma = ['Asthma'], Kidneydisease = ['Kidneydisease'],
+    Arthritis = ['Arthritis'], Pancreaticcancer = ['Pancreaticcancer'], Livercancer = ['Livercancer'], Colorectalcancer = ['Colorectalcancer'], 
+    COPD = ['COPD'], Depression = ['Depression'], Lungcancer = ['Lungcancer'])
 
     message = []
     message.append(create.id)
@@ -76,7 +76,17 @@ def show():
         'Gender': record_exists.Gender, 'Birthdate': record_exists.Birthdate, 
         'Address': record_exists.Address, 'Medications': record_exists.Medications, 
         'Nameofnextkin': record_exists.Nameofnextkin, 'Phoneofnextkin': record_exists.Phoneofnextkin,
-        'Reasonforvisit': record_exists.Reasonforvisit, 'Errormessage': "" }])
+        'Reasonforvisit': record_exists.Reasonforvisit, 'Errormessage': "",
+        'Fever': record_exists.Fever, 'Headache': record_exists.Headache, 'Nighchills': record_exists.Nightchills,
+        'Sorethroat': record_exists.Sorethroat, 'Cough': record_exists.Cough, 'Breathingdiff': record_exists.Breathingdiff,
+        'Diarrhoea': record_exists.Diarrhoea, 'Chestpain': record_exists.Chestpain, 'Legnumbness': record_exists.Legnumbness,
+        'Handnumbness': record_exists.Handnumbness, 'Facenumbness': record_exists.Facenumbness, 'Diabetes': record_exists.Diabetes,
+        'Highbloodpressure': record_exists.Highbloodpressure, 'Highcholesterol': record_exists.Highcholesterol, 
+        'Asthma': record_exists.Asthma, 'Kidneydisease': record_exists.Kidneydisease, 'Arthritis': record_exists.Arthritis,
+        'Pancreaticcancer': record_exists.Pancreaticcancer, 'Livercancer': record_exists.Livercancer, 
+        'Colorectalcancer': record_exists.Colorectalcancer, 'COPD': record_exists.COPD, 'Depression': record_exists.Depression, 
+        'Lungcancer': record_exists.Lungcancer
+         }])
 
     
     else: 
@@ -84,7 +94,15 @@ def show():
         'Gender': "", 'Birthdate': "", 
         'Address': "", 'Medications': "", 
         'Nameofnextkin': "", 'Phoneofnextkin': "",
-        'Reasonforvisit': "", 'Errormessage': "Record does not exist." }])
+        'Reasonforvisit': "", 'Errormessage': "Record does not exist.", 
+        'Fever': "", 'Headache': "", 'Nighchills': "",
+        'Sorethroat': "", 'Cough': "", 'Breathingdiff': "",
+        'Diarrhoea': "", 'Chestpain': "", 'Legnumbness': "",
+        'Handnumbness': "", 'Facenumbness': "", 'Diabetes': "",
+        'Highbloodpressure': "", 'Highcholesterol': "", 
+        'Asthma': "", 'Kidneydisease': "", 'Arthritis': "",
+        'Pancreaticcancer': "", 'Livercancer': "", 
+        'Colorectalcancer': "", 'COPD': "", 'Depression': "", 'Lungcancer': ""}])
 
     print(record_details)
 
