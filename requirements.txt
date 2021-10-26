@@ -30,4 +30,4 @@ tqdm==4.62.1
 typing==3.7.4.3
 webassets==0.12.1
 Werkzeug==0.14.1
-peewee-db-evolve==3.7.0
+peewee-db-evolve==3.7.3
