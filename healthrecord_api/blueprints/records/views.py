@@ -33,14 +33,21 @@ def create():
     current_time = datetime.datetime.now
     now = print(current_time)
 
+    print(new_entry['Asthma'])
+    print(new_entry['Livercancer'])
+
     create = Form.create(Name = new_entry['Name'], Gender = new_entry['Gender'], Birthdate = new_entry['Birthdate'], 
     Address = new_entry['Address'], Medications = new_entry['Medications'], Nameofnextkin = new_entry['Nameofnextkin'],
-    Phoneofnextkin = new_entry['Phoneofnextkin'], Reasonforvisit = new_entry['Reasonforvisit'], Fever = ['Fever'], 
-    Headache = ['Headache'], Nightchills = ['Nightchills'], Sorethroat = ['Sorethroat'], Cough = ['Cough'], Breathingdiff = ['Breathingdiff'], 
-    Diarrhoea = ['Diarrhoea'], Chestpain = ['Chestpain'], Legnumbness = ['Legnumbness'], Handnumbness = ['Handnumbness'], Facenumbness = ['Facenumbness'], 
-    Diabetes = ['Diabetes'], Highbloodpressure = ['Highbloodpressure'], Highcholesterol = ['Highcholesterol'], Asthma = ['Asthma'], Kidneydisease = ['Kidneydisease'],
-    Arthritis = ['Arthritis'], Pancreaticcancer = ['Pancreaticcancer'], Livercancer = ['Livercancer'], Colorectalcancer = ['Colorectalcancer'], 
-    COPD = ['COPD'], Depression = ['Depression'], Lungcancer = ['Lungcancer'])
+    Phoneofnextkin = new_entry['Phoneofnextkin'], Reasonforvisit = new_entry['Reasonforvisit'], Fever = new_entry['Fever'], 
+    Headache = new_entry['Headache'], Nightchills = new_entry['Nightchills'], Sorethroat = new_entry['Sorethroat'], Cough = new_entry['Cough'], 
+    Breathingdiff = new_entry['Breathingdiff'], Diarrhoea = new_entry['Diarrhoea'], Chestpain = new_entry['Chestpain'], 
+    Legnumbness = new_entry['Legnumbness'], Handnumbness = new_entry['Handnumbness'], Facenumbness = new_entry['Facenumbness'], 
+    Diabetes = new_entry['Diabetes'], Highbloodpressure = new_entry['Highbloodpressure'], 
+    Highcholesterol = new_entry['Highcholesterol'], Asthma = new_entry['Asthma'], Kidneydisease = new_entry['Kidneydisease'],
+    Arthritis = new_entry['Arthritis'], Pancreaticcancer = new_entry['Pancreaticcancer'], Livercancer = new_entry['Livercancer'], 
+    Colorectalcancer = new_entry['Colorectalcancer'], COPD = new_entry['COPD'], Depression = new_entry['Depression'], 
+    Lungcancer = new_entry['Lungcancer'])
+
 
     message = []
     message.append(create.id)
