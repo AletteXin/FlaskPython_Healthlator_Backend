@@ -24,6 +24,7 @@ class Form(BaseModel):
     Chestpain = pw.CharField()
     Legnumbness = pw.CharField()
     Handnumbness = pw.CharField()
+    Abdominalpain = pw.CharField()
     Facenumbness = pw.CharField()
     Diabetes = pw.CharField()
     Highbloodpressure = pw.CharField()
